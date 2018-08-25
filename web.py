@@ -20,7 +20,7 @@ def get_eastmoney_stories():
             'simtitle' : _data[i].get('simtitle'),
             'simdigest' : _data[i].get('simdigest'),
             'showtime' : _data[i].get('showtime'),
-            'Art_Media_Name' : _data[i].get('Art_Media_Name'),
+            'art_media_name' : _data[i].get('Art_Media_Name'),
             'run_id': run_id,
             }
 
@@ -37,7 +37,7 @@ def write_to_db_china_news(stories, cur, conn):
         simtitle = story['simtitle'],
         simdigest = story['simdigest'],
         showtime = story['showtime'],
-        art_media_name = story['Art_Media_Name'],
+        art_media_name = story['art_media_name'],
         run_id = story['run_id']
 
         # executing using cursor
